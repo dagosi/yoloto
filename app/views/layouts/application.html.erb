@@ -21,7 +21,7 @@
     <%= javascript_include_tag "application" %>
   </head>
   <body>
-    <div class='container'>
+    <div class='container well'>
       <div class="navbar navbar-fluid-top">
         <div class="navbar-inner">
           <div class="container-fluid">
@@ -44,21 +44,23 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container-fluid">
         <div class="row-fluid">
-          <div class="span12 well yield">
+          <div class="span12">
             <%= bootstrap_flash %>
             <%= yield %>
           </div>
         </div><!--/row-->
 
-        <footer class="well">
+        <footer>
+          <div class="span11">
+          <hr />
           <p>&copy; YOLOTO 2014</p>
           <%= render "layouts/facebook" %>
           <%= render "layouts/twitter" %>
+          </div>
         </footer>
       </div>
     </div>
-
   </body>
 </html>
