@@ -30,10 +30,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="#">YOLO T.O.</a>
-            <ul class="nav pull-right">
-              <li><%= mail_to "info@yoloto.ca", "Contact us at info@yoloto.ca", target: "_blank" %></li>
-            </ul>
+
+            <%= link_to "YOLO T.O.", root_path, class: 'brand' %>
+
+            <div class="nav-collapse collapse">
+              <ul class="nav pull-right">
+                <li><%= mail_to "info@yoloto.ca", "Contact us at info@yoloto.ca", target: "_blank" %></li>
+                <li><%= link_to image_tag("facebook.png") + " YOLOTO", "http://www.facebook.com/YOLOTO", target: "_blank" %></li>
+                <li><%= link_to image_tag("twitter.png") + " @yoloto_ca", "http://twitter.com/yoloto_ca", target: "_blank" %></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -47,9 +53,12 @@
         </div><!--/row-->
       </div>
 
+      <hr />
+
       <footer>
-        <hr />
         <p>&copy; YOLOTO 2014</p>
+        <%= render "layouts/facebook" %>
+        <%= render "layouts/twitter" %>
       </footer>
     </div>
 
