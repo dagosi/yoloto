@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class='container well'>
-      <div class="navbar navbar-fluid-top">
+      <div class="navbar navbar-fluid-top navbar-inverse">
         <div class="navbar-inner">
           <div class="container-fluid">
             <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
@@ -36,8 +36,9 @@
             <div class="nav-collapse collapse">
               <ul class="nav pull-right">
                 <li><%= mail_to "info@yoloto.ca", "Contact us at info@yoloto.ca", target: "_blank" %></li>
-                <li><%= link_to image_tag("facebook.png") + " YOLOTO", "http://www.facebook.com/YOLOTO", target: "_blank" %></li>
-                <li><%= link_to image_tag("twitter.png") + " @yoloto_ca", "http://twitter.com/yoloto_ca", target: "_blank" %></li>
+                <li><%= link_to image_tag("facebook.png", size: "20") + " YOLOTO", "http://www.facebook.com/YOLOTO", target: "_blank" %></li>
+                <li><%= link_to image_tag("twitter.png", size: "20") + " @yoloto_ca", "http://twitter.com/yoloto_ca", target: "_blank" %></li>
+                <li><%= link_to image_tag("instagram.png", size: "20") + " @yolotoca", "http://instagram.com/yolotoca", target: "_blank" %></li>
               </ul>
             </div>
           </div>
@@ -58,6 +59,7 @@
           <p>&copy; YOLOTO 2014</p>
           <%= render "layouts/facebook" %>
           <%= render "layouts/twitter" %>
+          <%= render "layouts/instagram" %>
           </div>
         </footer>
       </div>
