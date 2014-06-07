@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
 
 gem 'rails', '4.1.1'
 gem 'pg'
@@ -9,6 +10,9 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
 
 gem 'jquery-rails'
 gem 'turbolinks'
@@ -19,6 +23,7 @@ group :development do
   gem 'thin'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  #gem 'debugger'
 end
 
 # Use ActiveModel has_secure_password
@@ -29,6 +34,3 @@ end
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
