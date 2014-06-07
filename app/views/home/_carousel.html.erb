@@ -1,47 +1,51 @@
-<div id="myCarousel" class="span12 offset3 carousel slide" style='width: auto;'>
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
+<div class='span3'></div>
+<div class="span6">
+  <div id="myCarousel" class="carousel slide" style='width: auto;'>
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
 
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <%= image_tag("carousel/lobster.jpg") %>
-      <div class="carousel-caption">
-        <h4>Lobster</h4>
-        <p>This is the lobster</p>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag("carousel/lobster.jpg") %>
+        <div class="carousel-caption">
+          <h4>Lobster</h4>
+          <p>This is the lobster</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag("carousel/shrimp.jpg") %>
+        <div class="carousel-caption">
+          <h4>Shrimp</h4>
+          <p>This is the shrimp</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag("carousel/oyster.jpg") %>
+        <div class="carousel-caption">
+          <h4>Oyster</h4>
+          <p>This is the oyster</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag("carousel/grilled_cheese.png") %>
+        <div class="carousel-caption">
+          <h4>Kimchi Grilled Cheese</h4>
+          <p>This is the kimchi</p>
+        </div>
       </div>
     </div>
 
-    <div class="item">
-      <%= image_tag("carousel/shrimp.jpg") %>
-      <div class="carousel-caption">
-        <h4>Shrimp</h4>
-        <p>This is the shrimp</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <%= image_tag("carousel/oyster.jpg") %>
-      <div class="carousel-caption">
-        <h4>Oyster</h4>
-        <p>This is the oyster</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <%= image_tag("carousel/grilled_cheese.png") %>
-      <div class="carousel-caption">
-        <h4>Kimchi Grilled Cheese</h4>
-        <p>This is the kimchi</p>
-      </div>
-    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
   </div>
-
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
+<div class='span3'></div>
