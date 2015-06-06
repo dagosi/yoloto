@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0', patchlevel: '353'
+ruby '2.0.0', patchlevel: '481'
 
 gem 'rails', '4.1.1'
 gem 'pg'
