@@ -21,29 +21,8 @@
     <%= javascript_include_tag "application" %>
   </head>
   <body>
-    <div class='container'>
-      <div class="navbar navbar-fluid-top">
-        <div class="navbar-inner">
-          <div class="container-fluid">
-            <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </a>
-
-            <%= link_to "YOLO T.O.", root_path, class: 'brand' %>
-
-            <div class="nav-collapse collapse">
-              <ul class="nav pull-right">
-                <li><%= mail_to "info@yoloto.ca", "Contact us at info@yoloto.ca", target: "_blank" %></li>
-                <li><%= link_to image_tag("facebook.png", size: "20") + " YOLOTO", "http://www.facebook.com/YOLOTO", target: "_blank" %></li>
-                <li><%= link_to image_tag("twitter.png", size: "20") + " @yoloto_ca", "http://twitter.com/yoloto_ca", target: "_blank" %></li>
-                <li><%= link_to image_tag("instagram.png", size: "20") + " @yolotoca", "http://instagram.com/yolotoca", target: "_blank" %></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class='container well'>
+      <%= render "layouts/navbar" %>
 
       <div class="container-fluid">
         <div class="row-fluid">
@@ -51,17 +30,9 @@
             <%= bootstrap_flash %>
             <%= yield %>
           </div>
-        </div><!--/row-->
+        </div>
 
-        <footer>
-          <div class="span11">
-          <hr />
-          <p>&copy; YOLOTO 2014</p>
-          <%= render "layouts/facebook" %>
-          <%= render "layouts/twitter" %>
-          <%= render "layouts/instagram" %>
-          </div>
-        </footer>
+        <%= render "layouts/footer" %>
       </div>
     </div>
   </body>
