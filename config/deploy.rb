@@ -45,3 +45,14 @@ namespace :check do
   before "deploy:migrations", "check:revision"
   before "deploy:cold", "check:revision"
 end
+
+namespace :unicorn do
+  [:start, :stop, :restart].each do |action|
+    desc "#{action.capitalize} Unicorn"
+    task action, roles: :app do
+      run "service unicorn #{action}"
+    end
+
+    after "deploy:#{action}", "unicorn:#{action}"
+  end
+end
