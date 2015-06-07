@@ -7,7 +7,7 @@ server "107.170.58.164", :web, :app, :db, primary: true
 set :application, "yoloto"
 set :scm, "git"
 set :repository,  "git@github.com:dagosi89/yoloto.git"
-set :branch, "master"
+set :branch, fetch(:branch, "staging")
 
 set :default_stage, "production"
 set :user, "deployer"
